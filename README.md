@@ -9,14 +9,40 @@ This is a basic full-stack social media application called **NodeConnect.** The 
 
 ## Getting Started
 
-Step 1. Install and the dependencies.
-
-```bash
-bun i
-```
-
-or
+**_Step 1._** Install and the dependencies.
 
 ```bash
 npm i
+```
+
+**_Step 2._** Bootstrap the application.
+
+```bash
+npm run bootstrap
+```
+
+**_Step 3._** Migrate database schema.
+
+```bash
+npm run db:apply
+```
+
+**_Step 4._** Start the backend server.
+
+```bash
+npm start
+```
+
+## Some important things to keep in mind
+
+**_First,_** Don't forget to generate a snapshot of your current data model by running:
+
+```bash
+npm run db:snapshot
+```
+
+**_Second,_** If you upgrade the Directus version manually, then don't forget to Migrate the database to match the versions of Directus by running:
+
+```bash
+npm run db:up
 ```
