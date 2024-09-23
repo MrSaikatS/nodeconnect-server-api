@@ -2,7 +2,11 @@
   "name": "nodeconnect-server-api",
   "version": "0.1.0",
   "scripts": {
-    "start": "directus start"
+    "start": "directus start",
+    "upgrade": "directus database migrate:latest",
+    "bootstrap": "directus bootstrap",
+    "db:snapshot": "directus schema snapshot --yes ./snapshots/snapshot.yaml",
+    "db:apply": "directus schema apply --yes ./snapshots/snapshot.yaml"
   },
   "keywords": [],
   "author": "",
