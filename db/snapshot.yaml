@@ -2,5 +2,48 @@ version: 1
 directus: 11.1.0
 vendor: sqlite
 collections: []
-fields: []
+fields:
+  - collection: directus_users
+    field: gender
+    type: string
+    meta:
+      collection: directus_users
+      conditions: null
+      display: raw
+      display_options: null
+      field: gender
+      group: null
+      hidden: false
+      interface: select-radio
+      note: null
+      options:
+        choices:
+          - text: Male
+            value: male
+          - text: Female
+            value: female
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: gender
+      table: directus_users
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
 relations: []
