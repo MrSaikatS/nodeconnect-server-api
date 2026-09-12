@@ -17,6 +17,6 @@
     "directus": "11.1.0",
     "isolated-vm": "5.0.1",
     "sharp": "0.33.5",
-    "sqlite3": "5.1.7"
+    "sqlite3": "6.0.1"
   }
 }
